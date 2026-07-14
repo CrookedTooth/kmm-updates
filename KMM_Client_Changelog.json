@@ -2,8 +2,8 @@
     "current_version":  "1.4 RC4",
     "current_build":  "2026-07-14T11:client-polish-preview",
     "current_build_label":  "RC4 client polish preview",
-    "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/main/installer_build.json",
-    "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/main/KMM_Client_Changelog.json",
+    "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
+    "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
                     {
