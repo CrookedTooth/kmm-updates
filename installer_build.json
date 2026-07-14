@@ -1,11 +1,11 @@
 ﻿{
     "current_version":  "1.4 RC4",
-    "current_build":  "2026-07-14T12:distribution-install-test",
-    "current_build_label":  "RC4 distribution install test",
-    "generated_at":  "2026-07-14 12:47:06",
+    "current_build":  "2026-07-14T18:email-credentials-embed-fix",
+    "current_build_label":  "RC4 email credentials embed fix",
+    "generated_at":  "2026-07-14 18:30:10",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
-    "installer_sha256":  "83260A919CEF14A83BB1AA6EB26B553B4AF269E25A3C64CE940C53EB2FD468C0",
-    "installer_size_bytes":  14000745,
+    "installer_sha256":  "BA4F6B5CD848822D7ED4AFA417A1A960D441AE352AB30EC34B8716A89FAA3319",
+    "installer_size_bytes":  14001283,
     "changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
