@@ -1,8 +1,11 @@
 ﻿{
-    "version":  "1.4 RC4",
-    "current_build":  "2026-07-14T11:client-polish-preview",
-    "current_build_label":  "RC4 client polish preview",
-    "installer_sha256":  "A4DDE2CBA1AD8691B090D9B54F91365850AA3AAB9ADD9544D00A04275610B3EE",
+    "current_version":  "1.4 RC4",
+    "current_build":  "2026-07-14T12:distribution-install-test",
+    "current_build_label":  "RC4 distribution install test",
+    "generated_at":  "2026-07-14 12:47:06",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
-    "generated_at":  "2026-07-14T11:56:05"
+    "installer_sha256":  "83260A919CEF14A83BB1AA6EB26B553B4AF269E25A3C64CE940C53EB2FD468C0",
+    "installer_size_bytes":  14000745,
+    "changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
+    "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }

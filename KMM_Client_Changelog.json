@@ -1,7 +1,7 @@
 ﻿{
     "current_version":  "1.4 RC4",
-    "current_build":  "2026-07-14T11:client-polish-preview",
-    "current_build_label":  "RC4 client polish preview",
+    "current_build":  "2026-07-14T12:distribution-install-test",
+    "current_build_label":  "RC4 distribution install test",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
@@ -16,12 +16,21 @@
                                     ],
                         "builds":  [
                                        {
+                                           "build":  "2026-07-14T12:distribution-install-test",
+                                           "label":  "RC4 distribution install test",
+                                           "notes":  [
+                                                         "Fresh full-install test build for wiped-PC validation before distribution.",
+                                                         "Includes dashboard library browsing/search, wildcard search, default audio app launch, clearer sync status, rolling Latest Changes, email preference behavior, and filename old -\u003e new change details.",
+                                                         "Keeps the confirmed onboarding, approval refresh, Syncthing configuration, email preference, and Update Now behavior."
+                                                     ]
+                                       },
+                                       {
                                            "build":  "2026-07-14T11:client-polish-preview",
                                            "label":  "RC4 client polish preview",
                                            "notes":  [
                                                          "Adds the dashboard music library browser with in-app folder navigation.",
                                                          "Adds library search with Windows-style wildcard support such as *.mp3.",
-                                                         "Double-clicking a track opens it in the user's default audio app.",
+                                                         "Double-clicking a track opens it in the user\u0027s default audio app.",
                                                          "Improves Dashboard, Sync Status, and Latest Changes wording for client clarity.",
                                                          "Adds last successful sync reporting and clearer 100% complete sync status.",
                                                          "Cleans older corrupted change-note characters in Latest Changes."
