@@ -1,11 +1,11 @@
 {
     "current_version": "1.4 RC4",
-    "current_build": "2026-07-16T00:auto-invitation-onboarding",
-    "current_build_label": "RC4 automatic invitation onboarding",
-    "generated_at": "2026-07-16T13:40:01",
+    "current_build": "2026-07-16T14:remote-changelog-refresh",
+    "current_build_label": "RC4 remote changelog refresh",
+    "generated_at": "2026-07-16T15:03:25",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "89382BB13E21C9918D0F0B2A7E8454B5DD9C773F083D9DF2E604F671EF743394",
-    "installer_size_bytes": 14262830,
+    "installer_sha256": "303AFDD8D3DD1140FBC8343896C8AF9CFD2EA8DE5438565DB2DEB4FA3571C8DC",
+    "installer_size_bytes": 14263585,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
