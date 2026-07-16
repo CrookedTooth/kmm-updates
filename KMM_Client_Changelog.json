@@ -1,7 +1,7 @@
 {
     "current_version": "1.4 RC4",
-    "current_build": "2026-07-16T00:auto-invitation-onboarding",
-    "current_build_label": "RC4 automatic invitation onboarding",
+    "current_build": "2026-07-16T14:remote-changelog-refresh",
+    "current_build_label": "RC4 remote changelog refresh",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
@@ -15,6 +15,15 @@
                 "Provides neutral timeout guidance with Try Again, Edit Email, and Cancel when the Publisher has not completed the connection yet."
             ],
             "builds": [
+                {
+                    "build": "2026-07-16T14:remote-changelog-refresh",
+                    "label": "RC4 remote changelog refresh",
+                    "notes": [
+                        "Refreshes the visible Updates changelog from the existing GitHub release feed after startup and manual update checks.",
+                        "Uses the bundled changelog when the remote feed is unavailable or malformed, without creating a changelog cache.",
+                        "Keeps update checks off the Client UI thread and reuses the existing changelog request."
+                    ]
+                },
                 {
                     "build": "2026-07-16T00:auto-invitation-onboarding",
                     "label": "RC4 automatic invitation onboarding",
