@@ -1,11 +1,12 @@
 {
-    "current_version":  "1.4 RC5",
-    "current_build":  "2026-07-17T00:rc5-production",
-    "current_build_label":  "RC5 production release",
-    "generated_at":  "2026-07-17T20:16:56",
-    "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
-    "installer_sha256":  "8B525A0A94705E2D105CACDEA29E9DA00C7313A0D4F6F9B3EEF3B48657EDCA9F",
-    "installer_size_bytes":  32565628,
-    "changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
-    "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
+    "current_version": "1.4",
+    "release_version": "1.4",
+    "current_build": "2026-07-17T01:v1.4-production",
+    "current_build_label": "v1.4 production release",
+    "generated_at": "2026-07-17T22:01:04",
+    "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
+    "installer_sha256": "5178114C255E2231AF88D7E026D8F1D9E5B8D87CF735E35A14D1603F2276C2BE",
+    "installer_size_bytes": 32570746,
+    "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
+    "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
