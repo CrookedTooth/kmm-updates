@@ -1,313 +1,332 @@
 {
-    "current_version":  "1.4 RC5",
-    "release_version":  "1.4",
-    "current_build":  "2026-07-17T01:v1.4-production",
-    "current_build_label":  "v1.4 production release",
-    "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
-    "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
-    "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
-    "entries":  [
-                    {
-                        "version":  "1.4",
-                        "date":  "2026-07-17",
-                        "changes":  [
-                                        "Introduces the polished four-tab Client experience for Dashboard, Requests, Latest Changes, and Settings.",
-                                        "Adds responsive shared status, compact request entry, structured publish filtering, and safe lazy album artwork while preserving older summary-only history.",
-                                        "Adds in-app support email and synchronizes completed Publisher request statuses back to Client history."
-                                    ],
-                        "builds":  [
-                                       {
-                                           "build":  "2026-07-17T01:v1.4-production",
-                                           "label":  "v1.4 production release",
-                                           "notes":  [
-                                                         "Preserves Client and Syncthing identity, request history, selected library, and update configuration during upgrade.",
-                                                         "Uses stable request IDs for idempotent Completed status and Last Update synchronization.",
-                                                         "Keeps the established Dropbox update URL and backward-compatible profile/changelog schemas."
-                                                     ]
-                                       }
-                                   ]
-                    },
-                    {
-                        "version":  "1.4 RC4",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Connects automatically when the request email exactly matches Jeff\u0027s invitation email.",
-                                        "Waits for and accepts the expected Syncthing library offer, then configures Receive Only and starts synchronization.",
-                                        "Provides neutral timeout guidance with Try Again, Edit Email, and Cancel when the Publisher has not completed the connection yet."
-                                    ],
-                        "builds":  [
-                                       {
-                                           "build":  "2026-07-16T14:remote-changelog-refresh",
-                                           "label":  "RC4 remote changelog refresh",
-                                           "notes":  [
-                                                         "Refreshes the visible Updates changelog from the existing GitHub release feed after startup and manual update checks.",
-                                                         "Uses the bundled changelog when the remote feed is unavailable or malformed, without creating a changelog cache.",
-                                                         "Keeps update checks off the Client UI thread and reuses the existing changelog request."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-16T00:auto-invitation-onboarding",
-                                           "label":  "RC4 automatic invitation onboarding",
-                                           "notes":  [
-                                                         "Replaces manual Publisher approval with automatic invitation-email matching during Gmail refresh.",
-                                                         "Keeps KMM Client open while it detects and configures the Syncthing offer automatically.",
-                                                         "Preserves the existing Dropbox installer URL and self-update download path."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T18:email-credentials-embed-fix",
-                                           "label":  "RC4 email credentials embed fix",
-                                           "notes":  [
-                                                         "Embeds KMM Client email credentials in the packaged client so connection requests and client preference emails can be sent from fresh installs.",
-                                                         "Keeps the distribution install test changes and client polish features intact."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T12:distribution-install-test",
-                                           "label":  "RC4 distribution install test",
-                                           "notes":  [
-                                                         "Fresh full-install test build for wiped-PC validation before distribution.",
-                                                         "Includes dashboard library browsing/search, wildcard search, default audio app launch, clearer sync status, rolling Latest Changes, email preference behavior, and filename old -\u003e new change details.",
-                                                         "Keeps the confirmed onboarding, approval refresh, Syncthing configuration, email preference, and Update Now behavior."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T11:client-polish-preview",
-                                           "label":  "RC4 client polish preview",
-                                           "notes":  [
-                                                         "Adds the dashboard music library browser with in-app folder navigation.",
-                                                         "Adds library search with Windows-style wildcard support such as *.mp3.",
-                                                         "Double-clicking a track opens it in the user\u0027s default audio app.",
-                                                         "Improves Dashboard, Sync Status, and Latest Changes wording for client clarity.",
-                                                         "Adds last successful sync reporting and clearer 100% complete sync status.",
-                                                         "Cleans older corrupted change-note characters in Latest Changes."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:rc4-final",
-                                           "label":  "RC4 final",
-                                           "notes":  [
-                                                         "Final RC4 client build after live validation of onboarding, approval refresh, client update/restart, dashboard size, email opt-out, and Latest Changes history."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:update-handoff-test-marker",
-                                           "label":  "RC4 update handoff test marker",
-                                           "notes":  [
-                                                         "Minor no-behavior-change build for testing the KMM Client Update Now install and restart flow."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:silent-explorer-update-restart",
-                                           "label":  "RC4 silent Explorer update restart fix",
-                                           "notes":  [
-                                                         "Runs in-app updates silently with the update flag so the installer does not launch KMM itself.",
-                                                         "Waits longer after installation and relaunches KMM through Windows Explorer to avoid PyInstaller Python DLL startup errors."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:email-credentials-checkbox-style",
-                                           "label":  "RC4 email credentials and checkbox style fix",
-                                           "notes":  [
-                                                         "Embeds KMM Client email credentials in the packaged build so email preference updates can notify Jeff.",
-                                                         "Keeps the published update email checkbox background steady on mouseover."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:cmd-update-handoff",
-                                           "label":  "RC4 CMD update handoff fix",
-                                           "notes":  [
-                                                         "Replaces the hidden PowerShell update handoff with a Windows command-file handoff so Update Now can reliably start the installer after KMM closes.",
-                                                         "The handoff waits for the installer to finish, then reopens KMM Client automatically."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:publish-email-opt-out",
-                                           "label":  "RC4 publish email opt-out",
-                                           "notes":  [
-                                                         "Adds a Client Settings option to opt in or out of published library update emails.",
-                                                         "Publisher imports client email preferences and excludes opted-out users from publish notification emails."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:rolling-latest-changes",
-                                           "label":  "RC4 rolling latest changes",
-                                           "notes":  [
-                                                         "Latest Changes now displays a rolling chronological publish history instead of only the most recent publish.",
-                                                         "Publisher writes publish_history into the synced client profile while keeping the existing latest-publish fields for compatibility."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:dashboard-size-authority-fix",
-                                           "label":  "RC4 dashboard size authority fix",
-                                           "notes":  [
-                                                         "Makes the packaged installer profile authoritative for the client dashboard library size.",
-                                                         "Prevents stale synced client_profile.json files from older Dropbox Music tests from overwriting the dashboard size."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:manual-launch-update-suppress",
-                                           "label":  "RC4 manual launch with updater suppression",
-                                           "notes":  [
-                                                         "Manual installer runs launch KMM Client after setup, as expected for first-time users.",
-                                                         "In-app updates pass an updater flag so the installer does not launch KMM while the client-controlled restart handoff is active."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:client-controlled-update-restart",
-                                           "label":  "RC4 client-controlled update restart",
-                                           "notes":  [
-                                                         "Closes KMM Client before starting the downloaded updater, then relaunches KMM after the installer exits.",
-                                                         "Removes installer-side auto-launch to avoid PyInstaller Python DLL startup errors caused by overlapping restart paths."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:installer-relaunch-handoff-fix",
-                                           "label":  "RC4 installer relaunch handoff fix",
-                                           "notes":  [
-                                                         "Uses a delayed detached relaunch after client updates to avoid PyInstaller Python DLL startup errors.",
-                                                         "Preserves startup-only and button-click update checks."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:client-profile-priority-fix",
-                                           "label":  "RC4 client profile priority fix",
-                                           "notes":  [
-                                                         "Ensures the client dashboard uses the current packaged library profile instead of stale cached Dropbox Music data.",
-                                                         "Keeps the synced library profile as the final source when a newer profile is delivered through the shared folder."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:delayed-relaunch-fix",
-                                           "label":  "RC4 delayed relaunch fix",
-                                           "notes":  [
-                                                         "Delays KMM Client relaunch until after setup exits to avoid PyInstaller Python DLL startup errors.",
-                                                         "Keeps automatic restart after update without launching the app while the installer is still closing."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:installed-build-label",
-                                           "label":  "RC4 installed build label fix",
-                                           "notes":  [
-                                                         "Shows the exact installed client build label and build ID instead of only 1.4 RC4.",
-                                                         "Makes the current-build confirmation specific enough for hotfix testing."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:update-now-direct",
-                                           "label":  "RC4 direct Update Now flow",
-                                           "notes":  [
-                                                         "Changes the Updates button to Update Now whenever a newer build is available.",
-                                                         "Starts download and installation directly instead of showing a separate confirmation notes popup."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:changelog-history-fix",
-                                           "label":  "RC4 changelog history fix",
-                                           "notes":  [
-                                                         "Updates the Client changelog display to show the RC4 build history in chronological detail.",
-                                                         "Shows individual hotfix/test build notes before the broader release baseline."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:update-auto-restart",
-                                           "label":  "RC4 update auto-restart fix",
-                                           "notes":  [
-                                                         "Relaunches KMM Client automatically after the installer finishes an update.",
-                                                         "Keeps the installer handoff flow where KMM Client closes before updating."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:installer-handoff-fix",
-                                           "label":  "RC4 installer handoff fix",
-                                           "notes":  [
-                                                         "Starts the downloaded installer directly instead of covering it with a follow-up popup.",
-                                                         "Closes KMM Client after launching the installer so the update can replace the app cleanly."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:update-indicator-fix",
-                                           "label":  "RC4 update indicator fix",
-                                           "notes":  [
-                                                         "Replaces flashing update text with a steady Update available status.",
-                                                         "Fixes the extra error popup when closing or declining the update prompt."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:repair-hidden-test",
-                                           "label":  "RC4 repair-tab hidden test build",
-                                           "notes":  [
-                                                         "Temporarily hides the unfinished Repair tab while repair tools are redesigned.",
-                                                         "Keeps the stable Dropbox changelog feed for client update testing."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T00:final-candidate",
-                                           "label":  "RC4 final candidate",
-                                           "notes":  [
-                                                         "Adds the Updates tab indicator for newer hotfix/beta/final-candidate builds.",
-                                                         "Uses the shared Dropbox changelog as the remote update feed.",
-                                                         "Includes the confirmed one-click Refresh Approval Status timing fix.",
-                                                         "Includes final RC4 onboarding and Syncthing Receive Only confirmation fixes."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-13T23:25-hotfix",
-                                           "label":  "RC4 hotfix build",
-                                           "notes":  [
-                                                         "Refresh Approval Status waits briefly for Syncthing to present the Publisher folder offer so approval can complete in one click.",
-                                                         "Syncthing install now shows progress while downloading and installing.",
-                                                         "Onboarding storage free-space display refreshes after browsing to a different drive.",
-                                                         "Onboarding uses the current test-library profile size when packaged by Publisher."
-                                                     ]
-                                       }
-                                   ]
-                    },
-                    {
-                        "version":  "1.4 RC3",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Removed the obsolete Open Download Page action.",
-                                        "Consolidated the Updates tab to a single Check for Updates action.",
-                                        "Fixed Check for Updates hanging while checking the Dropbox installer.",
-                                        "Added client-side approval status refresh based on the Syncthing library share.",
-                                        "Improved shared-folder detection and pending Syncthing offer messaging.",
-                                        "Added refreshable Latest Changes support from the synced Publisher client profile.",
-                                        "Fixed update checks failing with missing version-parser support.",
-                                        "Kept direct update download and install workflow.",
-                                        "Aligned client version reporting with Publisher RC3."
-                                    ]
-                    },
-                    {
-                        "version":  "1.4 RC2",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Added a permanent Updates tab to KMM Client.",
-                                        "Added bundled client changelog display.",
-                                        "Added stable Dropbox update download.",
-                                        "Added download progress and SHA-256 calculation.",
-                                        "Added one-click launch of the downloaded installer.",
-                                        "Preserves completed onboarding and local request history during updates."
-                                    ]
-                    },
-                    {
-                        "version":  "1.4 RC1",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Added Publisher Gmail inbox and Messages Center.",
-                                        "Added bug report and feature request categories.",
-                                        "Corrected selected client tab sizing.",
-                                        "Added client Syncthing Sync Status and performance reporting."
-                                    ]
-                    },
-                    {
-                        "version":  "1.4 Preview",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Added permanent client dashboard after onboarding.",
-                                        "Added direct client email communication.",
-                                        "Added client requests and local request history."
-                                    ]
-                    }
-                ]
+    "current_version": "1.5",
+    "release_version": "1.5",
+    "current_build": "2026-07-19T02:v1.5-library-artwork",
+    "current_build_label": "v1.5 library artwork",
+    "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
+    "remote_changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
+    "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
+    "entries": [
+        {
+            "version": "1.5",
+            "date": "2026-07-19",
+            "changes": [
+                "Keeps folder.jpg hidden from Library Viewer rows, searches, counts, selection, and keyboard navigation.",
+                "Shows the selected folder's own artwork in a restrained Dashboard preview without parent-folder inheritance.",
+                "Opens valid artwork in a larger screen-bounded modal while preserving aspect ratio and releasing the source file lock."
+            ],
+            "builds": [
+                {
+                    "build": "2026-07-19T02:v1.5-library-artwork",
+                    "label": "v1.5 library artwork",
+                    "notes": [
+                        "Ignores missing, corrupt, inaccessible, or removed artwork without disrupting Library navigation.",
+                        "Isolates automated Client verification launches from the normal local Client profile."
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.4",
+            "date": "2026-07-17",
+            "changes": [
+                "Introduces the polished four-tab Client experience for Dashboard, Requests, Latest Changes, and Settings.",
+                "Adds responsive shared status, compact request entry, structured publish filtering, and safe lazy album artwork while preserving older summary-only history.",
+                "Adds in-app support email and synchronizes completed Publisher request statuses back to Client history."
+            ],
+            "builds": [
+                {
+                    "build": "2026-07-17T01:v1.4-production",
+                    "label": "v1.4 production release",
+                    "notes": [
+                        "Preserves Client and Syncthing identity, request history, selected library, and update configuration during upgrade.",
+                        "Uses stable request IDs for idempotent Completed status and Last Update synchronization.",
+                        "Keeps the established Dropbox update URL and backward-compatible profile/changelog schemas."
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.4 RC4",
+            "date": "2026-07-13",
+            "changes": [
+                "Connects automatically when the request email exactly matches Jeff's invitation email.",
+                "Waits for and accepts the expected Syncthing library offer, then configures Receive Only and starts synchronization.",
+                "Provides neutral timeout guidance with Try Again, Edit Email, and Cancel when the Publisher has not completed the connection yet."
+            ],
+            "builds": [
+                {
+                    "build": "2026-07-16T14:remote-changelog-refresh",
+                    "label": "RC4 remote changelog refresh",
+                    "notes": [
+                        "Refreshes the visible Updates changelog from the existing GitHub release feed after startup and manual update checks.",
+                        "Uses the bundled changelog when the remote feed is unavailable or malformed, without creating a changelog cache.",
+                        "Keeps update checks off the Client UI thread and reuses the existing changelog request."
+                    ]
+                },
+                {
+                    "build": "2026-07-16T00:auto-invitation-onboarding",
+                    "label": "RC4 automatic invitation onboarding",
+                    "notes": [
+                        "Replaces manual Publisher approval with automatic invitation-email matching during Gmail refresh.",
+                        "Keeps KMM Client open while it detects and configures the Syncthing offer automatically.",
+                        "Preserves the existing Dropbox installer URL and self-update download path."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T18:email-credentials-embed-fix",
+                    "label": "RC4 email credentials embed fix",
+                    "notes": [
+                        "Embeds KMM Client email credentials in the packaged client so connection requests and client preference emails can be sent from fresh installs.",
+                        "Keeps the distribution install test changes and client polish features intact."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T12:distribution-install-test",
+                    "label": "RC4 distribution install test",
+                    "notes": [
+                        "Fresh full-install test build for wiped-PC validation before distribution.",
+                        "Includes dashboard library browsing/search, wildcard search, default audio app launch, clearer sync status, rolling Latest Changes, email preference behavior, and filename old -> new change details.",
+                        "Keeps the confirmed onboarding, approval refresh, Syncthing configuration, email preference, and Update Now behavior."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T11:client-polish-preview",
+                    "label": "RC4 client polish preview",
+                    "notes": [
+                        "Adds the dashboard music library browser with in-app folder navigation.",
+                        "Adds library search with Windows-style wildcard support such as *.mp3.",
+                        "Double-clicking a track opens it in the user's default audio app.",
+                        "Improves Dashboard, Sync Status, and Latest Changes wording for client clarity.",
+                        "Adds last successful sync reporting and clearer 100% complete sync status.",
+                        "Cleans older corrupted change-note characters in Latest Changes."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:rc4-final",
+                    "label": "RC4 final",
+                    "notes": [
+                        "Final RC4 client build after live validation of onboarding, approval refresh, client update/restart, dashboard size, email opt-out, and Latest Changes history."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:update-handoff-test-marker",
+                    "label": "RC4 update handoff test marker",
+                    "notes": [
+                        "Minor no-behavior-change build for testing the KMM Client Update Now install and restart flow."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:silent-explorer-update-restart",
+                    "label": "RC4 silent Explorer update restart fix",
+                    "notes": [
+                        "Runs in-app updates silently with the update flag so the installer does not launch KMM itself.",
+                        "Waits longer after installation and relaunches KMM through Windows Explorer to avoid PyInstaller Python DLL startup errors."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:email-credentials-checkbox-style",
+                    "label": "RC4 email credentials and checkbox style fix",
+                    "notes": [
+                        "Embeds KMM Client email credentials in the packaged build so email preference updates can notify Jeff.",
+                        "Keeps the published update email checkbox background steady on mouseover."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:cmd-update-handoff",
+                    "label": "RC4 CMD update handoff fix",
+                    "notes": [
+                        "Replaces the hidden PowerShell update handoff with a Windows command-file handoff so Update Now can reliably start the installer after KMM closes.",
+                        "The handoff waits for the installer to finish, then reopens KMM Client automatically."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:publish-email-opt-out",
+                    "label": "RC4 publish email opt-out",
+                    "notes": [
+                        "Adds a Client Settings option to opt in or out of published library update emails.",
+                        "Publisher imports client email preferences and excludes opted-out users from publish notification emails."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:rolling-latest-changes",
+                    "label": "RC4 rolling latest changes",
+                    "notes": [
+                        "Latest Changes now displays a rolling chronological publish history instead of only the most recent publish.",
+                        "Publisher writes publish_history into the synced client profile while keeping the existing latest-publish fields for compatibility."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:dashboard-size-authority-fix",
+                    "label": "RC4 dashboard size authority fix",
+                    "notes": [
+                        "Makes the packaged installer profile authoritative for the client dashboard library size.",
+                        "Prevents stale synced client_profile.json files from older Dropbox Music tests from overwriting the dashboard size."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:manual-launch-update-suppress",
+                    "label": "RC4 manual launch with updater suppression",
+                    "notes": [
+                        "Manual installer runs launch KMM Client after setup, as expected for first-time users.",
+                        "In-app updates pass an updater flag so the installer does not launch KMM while the client-controlled restart handoff is active."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:client-controlled-update-restart",
+                    "label": "RC4 client-controlled update restart",
+                    "notes": [
+                        "Closes KMM Client before starting the downloaded updater, then relaunches KMM after the installer exits.",
+                        "Removes installer-side auto-launch to avoid PyInstaller Python DLL startup errors caused by overlapping restart paths."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:installer-relaunch-handoff-fix",
+                    "label": "RC4 installer relaunch handoff fix",
+                    "notes": [
+                        "Uses a delayed detached relaunch after client updates to avoid PyInstaller Python DLL startup errors.",
+                        "Preserves startup-only and button-click update checks."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:client-profile-priority-fix",
+                    "label": "RC4 client profile priority fix",
+                    "notes": [
+                        "Ensures the client dashboard uses the current packaged library profile instead of stale cached Dropbox Music data.",
+                        "Keeps the synced library profile as the final source when a newer profile is delivered through the shared folder."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:delayed-relaunch-fix",
+                    "label": "RC4 delayed relaunch fix",
+                    "notes": [
+                        "Delays KMM Client relaunch until after setup exits to avoid PyInstaller Python DLL startup errors.",
+                        "Keeps automatic restart after update without launching the app while the installer is still closing."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:installed-build-label",
+                    "label": "RC4 installed build label fix",
+                    "notes": [
+                        "Shows the exact installed client build label and build ID instead of only 1.4 RC4.",
+                        "Makes the current-build confirmation specific enough for hotfix testing."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:update-now-direct",
+                    "label": "RC4 direct Update Now flow",
+                    "notes": [
+                        "Changes the Updates button to Update Now whenever a newer build is available.",
+                        "Starts download and installation directly instead of showing a separate confirmation notes popup."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:changelog-history-fix",
+                    "label": "RC4 changelog history fix",
+                    "notes": [
+                        "Updates the Client changelog display to show the RC4 build history in chronological detail.",
+                        "Shows individual hotfix/test build notes before the broader release baseline."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:update-auto-restart",
+                    "label": "RC4 update auto-restart fix",
+                    "notes": [
+                        "Relaunches KMM Client automatically after the installer finishes an update.",
+                        "Keeps the installer handoff flow where KMM Client closes before updating."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:installer-handoff-fix",
+                    "label": "RC4 installer handoff fix",
+                    "notes": [
+                        "Starts the downloaded installer directly instead of covering it with a follow-up popup.",
+                        "Closes KMM Client after launching the installer so the update can replace the app cleanly."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:update-indicator-fix",
+                    "label": "RC4 update indicator fix",
+                    "notes": [
+                        "Replaces flashing update text with a steady Update available status.",
+                        "Fixes the extra error popup when closing or declining the update prompt."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:repair-hidden-test",
+                    "label": "RC4 repair-tab hidden test build",
+                    "notes": [
+                        "Temporarily hides the unfinished Repair tab while repair tools are redesigned.",
+                        "Keeps the stable Dropbox changelog feed for client update testing."
+                    ]
+                },
+                {
+                    "build": "2026-07-14T00:final-candidate",
+                    "label": "RC4 final candidate",
+                    "notes": [
+                        "Adds the Updates tab indicator for newer hotfix/beta/final-candidate builds.",
+                        "Uses the shared Dropbox changelog as the remote update feed.",
+                        "Includes the confirmed one-click Refresh Approval Status timing fix.",
+                        "Includes final RC4 onboarding and Syncthing Receive Only confirmation fixes."
+                    ]
+                },
+                {
+                    "build": "2026-07-13T23:25-hotfix",
+                    "label": "RC4 hotfix build",
+                    "notes": [
+                        "Refresh Approval Status waits briefly for Syncthing to present the Publisher folder offer so approval can complete in one click.",
+                        "Syncthing install now shows progress while downloading and installing.",
+                        "Onboarding storage free-space display refreshes after browsing to a different drive.",
+                        "Onboarding uses the current test-library profile size when packaged by Publisher."
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.4 RC3",
+            "date": "2026-07-13",
+            "changes": [
+                "Removed the obsolete Open Download Page action.",
+                "Consolidated the Updates tab to a single Check for Updates action.",
+                "Fixed Check for Updates hanging while checking the Dropbox installer.",
+                "Added client-side approval status refresh based on the Syncthing library share.",
+                "Improved shared-folder detection and pending Syncthing offer messaging.",
+                "Added refreshable Latest Changes support from the synced Publisher client profile.",
+                "Fixed update checks failing with missing version-parser support.",
+                "Kept direct update download and install workflow.",
+                "Aligned client version reporting with Publisher RC3."
+            ]
+        },
+        {
+            "version": "1.4 RC2",
+            "date": "2026-07-13",
+            "changes": [
+                "Added a permanent Updates tab to KMM Client.",
+                "Added bundled client changelog display.",
+                "Added stable Dropbox update download.",
+                "Added download progress and SHA-256 calculation.",
+                "Added one-click launch of the downloaded installer.",
+                "Preserves completed onboarding and local request history during updates."
+            ]
+        },
+        {
+            "version": "1.4 RC1",
+            "date": "2026-07-13",
+            "changes": [
+                "Added Publisher Gmail inbox and Messages Center.",
+                "Added bug report and feature request categories.",
+                "Corrected selected client tab sizing.",
+                "Added client Syncthing Sync Status and performance reporting."
+            ]
+        },
+        {
+            "version": "1.4 Preview",
+            "date": "2026-07-13",
+            "changes": [
+                "Added permanent client dashboard after onboarding.",
+                "Added direct client email communication.",
+                "Added client requests and local request history."
+            ]
+        }
+    ]
 }
