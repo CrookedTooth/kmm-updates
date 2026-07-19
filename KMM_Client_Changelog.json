@@ -1,8 +1,8 @@
 {
     "current_version": "1.5",
     "release_version": "1.5",
-    "current_build": "2026-07-19T02:v1.5-library-artwork",
-    "current_build_label": "v1.5 library artwork",
+    "current_build": "2026-07-19T03:v1.5-latest-changes",
+    "current_build_label": "v1.5 Latest Changes redesign",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
@@ -11,15 +11,21 @@
             "version": "1.5",
             "date": "2026-07-19",
             "changes": [
+                "Redesigns Latest Changes as a compact activity log with interactive summary filters and exact field-level change details.",
+                "Moves release notes into a dedicated modal and keeps navigation and release-note unread acknowledgements independent.",
+                "Adds readable before-and-after values, result highlighting, and tooltips for long structured publish details.",
                 "Keeps folder.jpg hidden from Library Viewer rows, searches, counts, selection, and keyboard navigation.",
+                "Keeps the Syncthing .stfolder marker hidden from Library Viewer browsing and search results.",
                 "Shows the selected folder's own artwork in a restrained Dashboard preview without parent-folder inheritance.",
                 "Opens valid artwork in a larger screen-bounded modal while preserving aspect ratio and releasing the source file lock."
             ],
             "builds": [
                 {
-                    "build": "2026-07-19T02:v1.5-library-artwork",
-                    "label": "v1.5 library artwork",
+                    "build": "2026-07-19T03:v1.5-latest-changes",
+                    "label": "v1.5 Latest Changes redesign",
                     "notes": [
+                        "Adds clickable New, Quality, Metadata, and Total summary cards without changing publish tracking.",
+                        "Preserves graceful summary-only rendering for older aggregate publish history.",
                         "Ignores missing, corrupt, inaccessible, or removed artwork without disrupting Library navigation.",
                         "Isolates automated Client verification launches from the normal local Client profile."
                     ]
