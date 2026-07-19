@@ -1,12 +1,12 @@
 {
-    "current_version": "1.4",
-    "release_version": "1.4",
-    "current_build": "2026-07-17T01:v1.4-production",
-    "current_build_label": "v1.4 production release",
-    "generated_at": "2026-07-17T22:01:04",
+    "current_version": "1.5",
+    "release_version": "1.5",
+    "current_build": "2026-07-19T02:v1.5-library-artwork",
+    "current_build_label": "v1.5 library artwork",
+    "generated_at": "2026-07-19T02:08:27-05:00",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "5178114C255E2231AF88D7E026D8F1D9E5B8D87CF735E35A14D1603F2276C2BE",
-    "installer_size_bytes": 32570746,
+    "installer_sha256": "2F709CF4AD4AD03CFEE7F730BC6EB41E5F562DA197250EF46D6FD5892F332910",
+    "installer_size_bytes": 32577297,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
