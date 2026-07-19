@@ -1,8 +1,8 @@
 {
     "current_version": "1.5",
     "release_version": "1.5",
-    "current_build": "2026-07-19T04:compact-latest-changes",
-    "current_build_label": "v1.5 compact Latest Changes hotfix",
+    "current_build": "2026-07-19T05:fixed-artwork-viewer",
+    "current_build_label": "v1.5 fixed artwork viewer hotfix",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
@@ -11,6 +11,7 @@
             "version": "1.5",
             "date": "2026-07-19",
             "changes": [
+                "Opens every Dashboard artwork preview in one consistent viewer while proportionally fitting square, portrait, and landscape sources.",
                 "Redesigns Latest Changes as a compact activity log with interactive summary filters and exact field-level change details.",
                 "Moves release notes into a dedicated modal and keeps navigation and release-note unread acknowledgements independent.",
                 "Adds readable before-and-after values, result highlighting, and tooltips for long structured publish details.",
@@ -20,6 +21,14 @@
                 "Opens valid artwork in a larger screen-bounded modal while preserving aspect ratio and releasing the source file lock."
             ],
             "builds": [
+                {
+                    "build": "2026-07-19T05:fixed-artwork-viewer",
+                    "label": "v1.5 fixed artwork viewer hotfix",
+                    "notes": [
+                        "Standardizes the artwork popup at the effective size previously produced by 1254-by-1254 Billboard artwork.",
+                        "Centers proportional upscaling or downscaling in a fixed square viewport and constrains the viewer on smaller displays."
+                    ]
+                },
                 {
                     "build": "2026-07-19T04:compact-latest-changes",
                     "label": "v1.5 compact Latest Changes hotfix",
