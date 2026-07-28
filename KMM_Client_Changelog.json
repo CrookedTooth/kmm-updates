@@ -1,12 +1,31 @@
 {
-    "current_version":  "1.7.1",
-    "release_version":  "1.7.1",
-    "current_build":  "2026-07-27T19:v1.7.1-updater-icon-hotfix",
-    "current_build_label":  "v1.7.1 updater security and Publisher icon hotfix",
+    "current_version":  "1.7.2",
+    "release_version":  "1.7.2",
+    "current_build":  "2026-07-28T20:v1.7.2-initial-sync-progress-hotfix",
+    "current_build_label":  "v1.7.2 initial sync progress hotfix",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.2",
+                        "date":  "2026-07-28",
+                        "changes":  [
+                                        "Fixed the Initial Sync progress indicator not appearing when a library sync was already partially complete.",
+                                        "Improved Syncthing progress monitoring and recovery after Client restarts.",
+                                        "Improved sync-status diagnostics."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-07-28T20:v1.7.2-initial-sync-progress-hotfix",
+                                           "label":  "v1.7.2 initial sync progress hotfix",
+                                           "notes":  [
+                                                         "Preserves all v1.7.1 onboarding, update, messaging, Library Browser, Latest Changes, and Collection Insights behavior.",
+                                                         "Keeps the established Dropbox installer URL and verified GitHub update metadata channel."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.1",
                         "date":  "2026-07-27",
