@@ -1,12 +1,31 @@
 {
-    "current_version":  "1.7",
-    "release_version":  "1.7",
-    "current_build":  "2026-07-27T18:v1.7-production",
-    "current_build_label":  "v1.7 official production release",
+    "current_version":  "1.7.1",
+    "release_version":  "1.7.1",
+    "current_build":  "2026-07-27T19:v1.7.1-updater-icon-hotfix",
+    "current_build_label":  "v1.7.1 updater security and Publisher icon hotfix",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.1",
+                        "date":  "2026-07-27",
+                        "changes":  [
+                                        "Verifies the downloaded Client installer against the published SHA-256 and size before allowing installation.",
+                                        "Reports unavailable or invalid remote update metadata as an unavailable update status instead of incorrectly declaring the installed Client current.",
+                                        "Restores the Publisher taskbar and Alt+Tab icon to the authoritative modern KMM icon."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-07-27T19:v1.7.1-updater-icon-hotfix",
+                                           "label":  "v1.7.1 updater security and Publisher icon hotfix",
+                                           "notes":  [
+                                                         "Preserves the v1.7 onboarding, synchronization, Library Browser, Collection Insights, messaging, and Client profile behavior.",
+                                                         "Keeps the established Dropbox installer URL and public GitHub update feed."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7",
                         "date":  "2026-07-27",
