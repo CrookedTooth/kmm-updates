@@ -1,12 +1,12 @@
 {
-    "current_version": "1.5",
-    "release_version": "1.5",
-    "current_build": "2026-07-19T05:fixed-artwork-viewer",
-    "current_build_label": "v1.5 fixed artwork viewer hotfix",
-    "generated_at": "2026-07-19T20:45:10.240Z",
+    "current_version": "1.7",
+    "release_version": "1.7",
+    "current_build": "2026-07-27T18:v1.7-production",
+    "current_build_label": "v1.7 official production release",
+    "generated_at": "2026-07-27T21:00:00-05:00",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "52108FD1DE8090B66F7DA7EE6411EFDD1B1B4FF7D0C607A86A625A4876EE467F",
-    "installer_size_bytes": 32596541,
+    "installer_sha256": "1B70B3651B553FA6D7DB27C709F57B26C534403216D5525652B922673B290C72",
+    "installer_size_bytes": 32788805,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
