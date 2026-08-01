@@ -1,12 +1,12 @@
 {
-    "current_version": "1.7.5",
-    "release_version": "1.7.5",
-    "current_build": "2026-07-31T23:v1.7.5-legacy-updater-compatibility",
-    "current_build_label": "v1.7.5 legacy updater compatibility",
-    "generated_at": "2026-08-01T04:27:02.277Z",
+    "current_version": "1.7.6",
+    "release_version": "1.7.6",
+    "current_build": "2026-08-01T00:v1.7.6-legacy-process-lock-fix",
+    "current_build_label": "v1.7.6 legacy process lock fix",
+    "generated_at": "2026-08-01T05:05:00.000Z",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "FB658B2990D42129AB6D096F9D226FB825F08EEAD1BE7F68FBB65D698C8B9F30",
-    "installer_size_bytes": 33097677,
+    "installer_sha256": "DE43FD4B8949D95858D59799AAA013E44E9A61685FE9F811743A5DEF9038F709",
+    "installer_size_bytes": 33167631,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
