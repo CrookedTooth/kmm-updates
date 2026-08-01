@@ -1,12 +1,31 @@
 {
-    "current_version":  "1.7.2",
-    "release_version":  "1.7.2",
-    "current_build":  "2026-07-28T20:v1.7.2-initial-sync-progress-hotfix",
-    "current_build_label":  "v1.7.2 initial sync progress hotfix",
+    "current_version":  "1.7.3",
+    "release_version":  "1.7.3",
+    "current_build":  "2026-07-31T21:v1.7.3-request-history-local-time",
+    "current_build_label":  "v1.7.3 request history local time",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.3",
+                        "date":  "2026-07-31",
+                        "changes":  [
+                                        "Displays Request History Requested On and Last Update timestamps in the Client computer's local time.",
+                                        "Uses a compact M/D/YY h:mm AM/PM format while preserving stored UTC request records and chronological ordering.",
+                                        "Handles UTC Z timestamps, explicit offsets, fractional seconds, daylight-saving conversion, and unavailable values safely."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-07-31T21:v1.7.3-request-history-local-time",
+                                           "label":  "v1.7.3 request history local time",
+                                           "notes":  [
+                                                         "Preserves the v1.7.2 Initial Sync progress correction and all existing onboarding, synchronization, messaging, Library Browser, Latest Changes, and Collection Insights behavior.",
+                                                         "Keeps request payloads and persisted UTC timestamps unchanged."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.2",
                         "date":  "2026-07-28",
