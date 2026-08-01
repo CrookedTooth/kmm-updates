@@ -1,12 +1,31 @@
-{
-    "current_version":  "1.7.5",
-    "release_version":  "1.7.5",
-    "current_build":  "2026-07-31T23:v1.7.5-legacy-updater-compatibility",
-    "current_build_label":  "v1.7.5 legacy updater compatibility",
+﻿{
+    "current_version":  "1.7.6",
+    "release_version":  "1.7.6",
+    "current_build":  "2026-08-01T00:v1.7.6-legacy-process-lock-fix",
+    "current_build_label":  "v1.7.6 legacy process lock fix",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.6",
+                        "date":  "2026-08-01",
+                        "changes":  [
+                                        "Completes legacy in-app updates when an older PyInstaller parent process remains alive after the Client window closes.",
+                                        "Force-closes only applications locking files in the exact installation directory selected for upgrade before replacing the Client executable.",
+                                        "Preserves legacy active-path recovery, verified relaunch, profiles, Syncthing configuration, and checksum and size enforcement."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-08-01T00:v1.7.6-legacy-process-lock-fix",
+                                           "label":  "v1.7.6 legacy process lock fix",
+                                           "notes":  [
+                                                         "Corrects the final v1.7.1 first-hop update failure without deleting alternate installations or changing the stable public update channel.",
+                                                         "Preserves Request History local time and the Initial Sync progress correction."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.5",
                         "date":  "2026-07-31",
@@ -525,4 +544,3 @@
                     }
                 ]
 }
-
