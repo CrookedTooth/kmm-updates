@@ -1,12 +1,31 @@
 {
-    "current_version":  "1.7.3",
-    "release_version":  "1.7.3",
-    "current_build":  "2026-07-31T21:v1.7.3-request-history-local-time",
-    "current_build_label":  "v1.7.3 request history local time",
+    "current_version":  "1.7.4",
+    "release_version":  "1.7.4",
+    "current_build":  "2026-07-31T22:v1.7.4-update-install-path-fix",
+    "current_build_label":  "v1.7.4 update installation targeting",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.4",
+                        "date":  "2026-07-31",
+                        "changes":  [
+                                        "Corrects updates launched from legacy or manually moved Client installations so the active installation is upgraded instead of a parallel registered directory.",
+                                        "Verifies the installed executable version before relaunch and reports installer failures instead of silently reopening an older Client.",
+                                        "Adds privacy-safe update and installer diagnostics while preserving checksum and byte-size enforcement."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-07-31T22:v1.7.4-update-install-path-fix",
+                                           "label":  "v1.7.4 update installation targeting",
+                                           "notes":  [
+                                                         "Preserves the v1.7.3 Request History local-time display and the v1.7.2 Initial Sync progress correction.",
+                                                         "Keeps the established AppId, per-user installation, shortcuts, profiles, Syncthing configuration, and public update channel."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.3",
                         "date":  "2026-07-31",
