@@ -1,12 +1,12 @@
 {
-    "current_version": "1.7.2",
-    "release_version": "1.7.2",
-    "current_build": "2026-07-28T20:v1.7.2-initial-sync-progress-hotfix",
-    "current_build_label": "v1.7.2 initial sync progress hotfix",
-    "generated_at": "2026-07-28T18:44:20-05:00",
+    "current_version": "1.7.3",
+    "release_version": "1.7.3",
+    "current_build": "2026-07-31T21:v1.7.3-request-history-local-time",
+    "current_build_label": "v1.7.3 request history local time",
+    "generated_at": "2026-07-31T22:17:52-05:00",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "792B742FC38B68367434BA4D6E802D8E6295F9A7B56314D661CF56638AD33C1F",
-    "installer_size_bytes": 33094095,
+    "installer_sha256": "BAD7B69E6BFB224C58E57D0F5DCFC3FCAA89E4D7FA5E45CAC4A88856D129692D",
+    "installer_size_bytes": 33093443,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
