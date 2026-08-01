@@ -1,12 +1,12 @@
 {
-    "current_version": "1.7.3",
-    "release_version": "1.7.3",
-    "current_build": "2026-07-31T21:v1.7.3-request-history-local-time",
-    "current_build_label": "v1.7.3 request history local time",
-    "generated_at": "2026-07-31T22:17:52-05:00",
+    "current_version": "1.7.4",
+    "release_version": "1.7.4",
+    "current_build": "2026-07-31T22:v1.7.4-update-install-path-fix",
+    "current_build_label": "v1.7.4 update installation targeting",
+    "generated_at": "2026-07-31T23:05:00-05:00",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "BAD7B69E6BFB224C58E57D0F5DCFC3FCAA89E4D7FA5E45CAC4A88856D129692D",
-    "installer_size_bytes": 33093443,
+    "installer_sha256": "C228CD6468258D7BF57CE2D6D960721FAD34920317DAFCA4C52E4D3672968836",
+    "installer_size_bytes": 33096851,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
