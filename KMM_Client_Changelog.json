@@ -1,12 +1,31 @@
 ﻿{
-    "current_version":  "1.7.7",
-    "release_version":  "1.7.7",
-    "current_build":  "2026-08-09T19:v1.7.7-dashboard-insights",
-    "current_build_label":  "v1.7.7 Collection Insights dashboard",
+    "current_version":  "1.7.8",
+    "release_version":  "1.7.8",
+    "current_build":  "2026-08-09T21:v1.7.8-updater-relaunch-dashboard-sizing",
+    "current_build_label":  "v1.7.8 updater relaunch and Dashboard sizing",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.8",
+                        "date":  "2026-08-09",
+                        "changes":  [
+                                        "Corrects the automatic post-update relaunch so the new one-file Client starts with a fresh PyInstaller runtime instead of reusing the previous Client's removed temporary files.",
+                                        "Restores Collection Insights to a compact Dashboard control occupying the former two-button area, with the invitation text aligned on the right.",
+                                        "Preserves v1.7.7 synchronization, messaging, Request History local time, Initial Sync progress, profiles, and Syncthing configuration."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-08-09T21:v1.7.8-updater-relaunch-dashboard-sizing",
+                                           "label":  "v1.7.8 updater relaunch and Dashboard sizing",
+                                           "notes":  [
+                                                         "The updater resets inherited PyInstaller process state before either successful or fallback Client relaunch.",
+                                                         "Collection Insights remains Publisher-generated and Client scan-free."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.7",
                         "date":  "2026-08-09",
