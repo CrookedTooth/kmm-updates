@@ -1,13 +1,13 @@
 ﻿{
-    "version":  "1.7.7",
-    "current_version":  "1.7.7",
-    "current_build":  "2026-08-09T19:v1.7.7-dashboard-insights",
-    "current_build_label":  "v1.7.7 Collection Insights dashboard",
-    "sha256":  "E7F50E7FCFA23405E9D206C5D2DE2296031CCD236A016419A227A1417EB2A533",
-    "installer_sha256":  "E7F50E7FCFA23405E9D206C5D2DE2296031CCD236A016419A227A1417EB2A533",
-    "size":  33099156,
-    "installer_size_bytes":  33099156,
+    "version":  "1.7.8",
+    "current_version":  "1.7.8",
+    "current_build":  "2026-08-09T21:v1.7.8-updater-relaunch-dashboard-sizing",
+    "current_build_label":  "v1.7.8 updater relaunch and Dashboard sizing",
+    "sha256":  "82DDF6ACD0E25D8EEDFAF6D0879024CBF3B06109284036FC0E1C68BB634105CB",
+    "installer_sha256":  "82DDF6ACD0E25D8EEDFAF6D0879024CBF3B06109284036FC0E1C68BB634105CB",
+    "size":  34095870,
+    "installer_size_bytes":  34095870,
     "path":  "D:\\Dropbox\\Public\\KMM\\Client Installer\\Install.exe",
-    "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
-    "generated_at":  "2026-08-10T00:41:40.853Z"
+    "download_url":  "https://www.dropbox.com/scl/fi/n2198teznxquyux7axwan/Install.exe?rlkey=jb14hid66gn68pl9tcd5nw4h9\u0026st=32l4gosr\u0026dl=1",
+    "generated_at":  "2026-08-10T01:49:07.995Z"
 }
