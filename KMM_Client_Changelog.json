@@ -1,12 +1,31 @@
-﻿{
-    "current_version":  "1.7.6",
-    "release_version":  "1.7.6",
-    "current_build":  "2026-08-01T00:v1.7.6-legacy-process-lock-fix",
-    "current_build_label":  "v1.7.6 legacy process lock fix",
+{
+    "current_version":  "1.7.7",
+    "release_version":  "1.7.7",
+    "current_build":  "2026-08-09T19:v1.7.7-dashboard-insights",
+    "current_build_label":  "v1.7.7 Collection Insights dashboard",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.7",
+                        "date":  "2026-08-09",
+                        "changes":  [
+                                        "Makes Collection Insights a prominent full-width Dashboard feature with existing Artists, Albums, Tracks, and Library Size metrics.",
+                                        "Removes the secondary Open in Windows Explorer action from the Dashboard while preserving the Library Browser and all synchronization behavior.",
+                                        "Preserves v1.7.6 update reliability, Request History local time, Initial Sync progress, profiles, and Syncthing configuration."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-08-09T19:v1.7.7-dashboard-insights",
+                                           "label":  "v1.7.7 Collection Insights dashboard",
+                                           "notes":  [
+                                                         "Collection Insights remains Publisher-generated and Client scan-free.",
+                                                         "The Dashboard card adapts at narrower window widths without hiding sync health, requests, or alerts."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.6",
                         "date":  "2026-08-01",
@@ -203,105 +222,7 @@
                                        },
                                        {
                                            "build":  "2026-07-19T10:collection-insights-visual-fit-test",
-                                           "label":  "v1.5 Collection Insights visual fit test",
-                                           "notes":  [
-                                                         "Adds a compact Collection Insights entry without changing the existing Library Viewer or Folder Artwork pane.",
-                                                         "Uses an optional backward-compatible Publisher summary so the Client never scans the synchronized library to calculate statistics.",
-                                                         "Loads only explicitly listed recent artwork lazily from safe library-relative folder.jpg paths and preserves a graceful state for older profiles.",
-                                                         "Refines the native Tkinter presentation with stronger hierarchy, polished cards, clearer progress visuals, a larger format chart, and achievement-style milestones.",
-                                                         "Compacts the modal for scaled 1080p displays, renders every quality as a real proportional Canvas bar with exact sample-rate labels, simplifies the format donut, and displays cumulative baseline activity and recent additions from Publisher schema v2."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-19T05:fixed-artwork-viewer",
-                                           "label":  "v1.5 fixed artwork viewer hotfix",
-                                           "notes":  [
-                                                         "Standardizes the artwork popup at the effective size previously produced by 1254-by-1254 Billboard artwork.",
-                                                         "Centers proportional upscaling or downscaling in a fixed square viewport and constrains the viewer on smaller displays."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-19T04:compact-latest-changes",
-                                           "label":  "v1.5 compact Latest Changes hotfix",
-                                           "notes":  [
-                                                         "Replaces the uneven selected-card frame with one clean orange bottom indicator independent of hover and keyboard focus.",
-                                                         "Compacts the publish heading and summary filters so more change rows remain visible at supported display scaling."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-19T03:v1.5-latest-changes",
-                                           "label":  "v1.5 Latest Changes redesign",
-                                           "notes":  [
-                                                         "Adds clickable New, Quality, Metadata, and Total summary cards without changing publish tracking.",
-                                                         "Preserves graceful summary-only rendering for older aggregate publish history.",
-                                                         "Ignores missing, corrupt, inaccessible, or removed artwork without disrupting Library navigation.",
-                                                         "Isolates automated Client verification launches from the normal local Client profile."
-                                                     ]
-                                       }
-                                   ]
-                    },
-                    {
-                        "version":  "1.4",
-                        "date":  "2026-07-17",
-                        "changes":  [
-                                        "Introduces the polished four-tab Client experience for Dashboard, Requests, Latest Changes, and Settings.",
-                                        "Adds responsive shared status, compact request entry, structured publish filtering, and safe lazy album artwork while preserving older summary-only history.",
-                                        "Adds in-app support email and synchronizes completed Publisher request statuses back to Client history."
-                                    ],
-                        "builds":  [
-                                       {
-                                           "build":  "2026-07-17T01:v1.4-production",
-                                           "label":  "v1.4 production release",
-                                           "notes":  [
-                                                         "Preserves Client and Syncthing identity, request history, selected library, and update configuration during upgrade.",
-                                                         "Uses stable request IDs for idempotent Completed status and Last Update synchronization.",
-                                                         "Keeps the established Dropbox update URL and backward-compatible profile/changelog schemas."
-                                                     ]
-                                       }
-                                   ]
-                    },
-                    {
-                        "version":  "1.4 RC4",
-                        "date":  "2026-07-13",
-                        "changes":  [
-                                        "Connects automatically when the request email exactly matches Jeff\u0027s invitation email.",
-                                        "Waits for and accepts the expected Syncthing library offer, then configures Receive Only and starts synchronization.",
-                                        "Provides neutral timeout guidance with Try Again, Edit Email, and Cancel when the Publisher has not completed the connection yet."
-                                    ],
-                        "builds":  [
-                                       {
-                                           "build":  "2026-07-16T14:remote-changelog-refresh",
-                                           "label":  "RC4 remote changelog refresh",
-                                           "notes":  [
-                                                         "Refreshes the visible Updates changelog from the existing GitHub release feed after startup and manual update checks.",
-                                                         "Uses the bundled changelog when the remote feed is unavailable or malformed, without creating a changelog cache.",
-                                                         "Keeps update checks off the Client UI thread and reuses the existing changelog request."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-16T00:auto-invitation-onboarding",
-                                           "label":  "RC4 automatic invitation onboarding",
-                                           "notes":  [
-                                                         "Replaces manual Publisher approval with automatic invitation-email matching during Gmail refresh.",
-                                                         "Keeps KMM Client open while it detects and configures the Syncthing offer automatically.",
-                                                         "Preserves the existing Dropbox installer URL and self-update download path."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T18:email-credentials-embed-fix",
-                                           "label":  "RC4 email credentials embed fix",
-                                           "notes":  [
-                                                         "Embeds KMM Client email credentials in the packaged client so connection requests and client preference emails can be sent from fresh installs.",
-                                                         "Keeps the distribution install test changes and client polish features intact."
-                                                     ]
-                                       },
-                                       {
-                                           "build":  "2026-07-14T12:distribution-install-test",
-                                           "label":  "RC4 distribution install test",
-                                           "notes":  [
-                                                         "Fresh full-install test build for wiped-PC validation before distribution.",
-                                                         "Includes dashboard library browsing/search, wildcard search, default audio app launch, clearer sync status, rolling Latest Changes, email preference behavior, and filename old -\u003e new change details.",
-                                                         "Keeps the confirmed onboarding, approval refresh, Syncthing configuration, email preference, and Update Now behavior."
+                            …2328 tokens truncated…                                                  "Keeps the confirmed onboarding, approval refresh, Syncthing configuration, email preference, and Update Now behavior."
                                                      ]
                                        },
                                        {
