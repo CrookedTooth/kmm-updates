@@ -1,12 +1,12 @@
 {
-    "current_version": "1.7.6",
-    "release_version": "1.7.6",
-    "current_build": "2026-08-01T00:v1.7.6-legacy-process-lock-fix",
-    "current_build_label": "v1.7.6 legacy process lock fix",
-    "generated_at": "2026-08-01T05:05:00.000Z",
+    "current_version": "1.7.7",
+    "release_version": "1.7.7",
+    "current_build": "2026-08-09T19:v1.7.7-dashboard-insights",
+    "current_build_label": "v1.7.7 Collection Insights dashboard",
+    "generated_at": "2026-08-10T00:43:43.030Z",
     "download_url": "https://www.dropbox.com/scl/fi/mqscpnrvkhc3bmlcml6te/Install.exe?rlkey=4y3wisary4izftiaik4flrbww&dl=1",
-    "installer_sha256": "DE43FD4B8949D95858D59799AAA013E44E9A61685FE9F811743A5DEF9038F709",
-    "installer_size_bytes": 33167631,
+    "installer_sha256": "E7F50E7FCFA23405E9D206C5D2DE2296031CCD236A016419A227A1417EB2A533",
+    "installer_size_bytes": 33099156,
     "changelog_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "metadata_url": "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json"
 }
