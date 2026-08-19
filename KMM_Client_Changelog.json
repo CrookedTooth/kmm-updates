@@ -1,12 +1,31 @@
 ﻿{
-    "current_version":  "1.7.8",
-    "release_version":  "1.7.8",
-    "current_build":  "2026-08-09T21:v1.7.8-updater-relaunch-dashboard-sizing",
-    "current_build_label":  "v1.7.8 updater relaunch and Dashboard sizing",
+    "current_version":  "1.7.9",
+    "release_version":  "1.7.9",
+    "current_build":  "2026-08-18T04:v1.7.9-library-browser-internal-file-filter",
+    "current_build_label":  "v1.7.9 Library Browser internal-file filter",
     "metadata_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/installer_build.json",
     "remote_changelog_url":  "https://raw.githubusercontent.com/CrookedTooth/kmm-updates/refs/heads/main/KMM_Client_Changelog.json",
     "download_url":  "https://www.dropbox.com/scl/fi/n2198teznxquyux7axwan/Install.exe?rlkey=jb14hid66gn68pl9tcd5nw4h9\u0026st=32l4gosr\u0026dl=1",
     "entries":  [
+                    {
+                        "version":  "1.7.9",
+                        "date":  "2026-08-18",
+                        "changes":  [
+                                        "Hides the internal client_profile.json synchronization profile and Windows desktop.ini system file from the shared Library Browser.",
+                                        "Preserves ordinary JSON, INI, music, and other library-file visibility without deleting or modifying the hidden internal files.",
+                                        "Preserves v1.7.8 update reliability, synchronization, Client profiles, Request History local time, and Initial Sync progress."
+                                    ],
+                        "builds":  [
+                                       {
+                                           "build":  "2026-08-18T04:v1.7.9-library-browser-internal-file-filter",
+                                           "label":  "v1.7.9 Library Browser internal-file filter",
+                                           "notes":  [
+                                                         "Publisher and Client use the same case-insensitive exact-filename filter.",
+                                                         "No broad JSON, INI, hidden-file, or dotfile exclusion was added."
+                                                     ]
+                                       }
+                                   ]
+                    },
                     {
                         "version":  "1.7.8",
                         "date":  "2026-08-09",
